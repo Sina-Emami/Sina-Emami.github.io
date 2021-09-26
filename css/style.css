@@ -8,13 +8,16 @@
 
 /*GENERAL STYLE*/
 html {
-  overflow-x: hidden;
-}
+  overflow-x: hidden !important;
+  position: relative;
+  max-width: 100%;
+} 
 
 body {
   font-family: "Open Sans", serif;
   padding-top: 54px;
   color: #868e96;
+  overflow-x: hidden !important;
 }
 
 @media (min-width: 992px) {
@@ -63,10 +66,11 @@ a:active {
   font-family: "Saira Extra Condensed", serif;
   font-size: 1.35rem;
 }
-.img-container {
+
+/* .img-container {
   display: flex;
   justify-content: center;
-}
+} */
 /*==================================================
                   SOCIAL-ICON
 ====================================================*/
@@ -596,6 +600,7 @@ section.resume-section .resume-item .resume-date {
 #certificates .portfolio-item {
   right: 0;
   margin: 0 -1px 15px;
+  display: flex !important;
 }
 
 #certificates .portfolio-item .portfolio-link {
